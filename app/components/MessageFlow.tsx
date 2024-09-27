@@ -11,10 +11,9 @@ type MessageFlowProps = {
     messages: Messages[];
     onPrimaryAction?: () => void;
     onSecondaryAction?: () => void;
-    centerMessages?: boolean; // Optional parameter to center messages
 };
 
-export default function MessageFlow({ messages, onPrimaryAction, onSecondaryAction, centerMessages = false }: MessageFlowProps) {
+export default function MessageFlow({ messages, onPrimaryAction, onSecondaryAction }: MessageFlowProps) {
     const [currentCard, setCurrentCard] = useState(0); // Tracks which card is currently being displayed
     const router = useRouter();
 
@@ -68,7 +67,6 @@ export default function MessageFlow({ messages, onPrimaryAction, onSecondaryActi
                                 message={msg.message}
                                 fromUser={msg.fromUser}
                                 onAnimationComplete={index === currentCard ? handleAnimationComplete : undefined}
-                                centerMessage={centerMessages} // Pass the centerMessages prop to MessageCard
                             />
                         )
                     )

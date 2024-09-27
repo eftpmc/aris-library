@@ -4,14 +4,15 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation'; // useRouter hook for navigation
 import MessageCard from '../MessageCard';
 import ButtonCard from '../ButtonCard';
+import { Messages} from '@/types'
 
 export default function CreateBookComponent() {
     const [currentCard, setCurrentCard] = useState(0); // Tracks which card is currently being displayed
     const router = useRouter();
 
-    // Messages array specific to creating a book
-    const messages = [
-        { message: "Grreat! Let's create a new book. What would you like to name it?", fromUser: false },
+    // Define the messages array using the Messages type
+    const messages: Messages[] = [
+        { message: "Great! Let's create a new book. What would you like to name it?", fromUser: false },
         { type: 'button', primaryLabel: "Start Writing", secondaryLabel: "Go Back", fromUser: true },
     ];
 

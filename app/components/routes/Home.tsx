@@ -4,15 +4,16 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation'; // Import useRouter for navigation
 import MessageCard from '../MessageCard';
 import ButtonCard from '../ButtonCard';
+import { Messages} from '@/types'
 
 export default function Home() {
     const [currentCard, setCurrentCard] = useState(0); // Tracks which card is currently being displayed
     const router = useRouter(); // Initialize router
 
     // Updated messages array with a ButtonCard entry
-    const messages = [
-        { message: "Weelcome, my name is Ari and I own this small library.", fromUser: false },
-        { message: "Feeel free to either browse what we have or look into adding to our collection.", fromUser: false },
+    const messages: Messages[] = [
+        { message: "Welcome, my name is Ari and I own this small library.", fromUser: false },
+        { message: "Feel free to either browse what we have or look into adding to our collection.", fromUser: false },
         { type: 'button', primaryLabel: "Create a book", secondaryLabel: "Browse collection", fromUser: true },
     ];
 

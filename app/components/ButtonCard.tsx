@@ -18,7 +18,7 @@ export default function ButtonCard({ primaryAction, secondaryAction, primaryLabe
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
-                className="card bg-primary text-white border-gray-700 border-[1px] bg-opacity-70 shadow-xl w-full max-w-xs md:max-w-md lg:max-w-lg"
+                className="card bg-base-300 text-white border-gray-700 border-[1px] bg-opacity-70 shadow-xl w-full md:max-w-md lg:max-w-lg "
                 onAnimationComplete={onAnimationComplete}
             >
                 <div className="card-body p-4">
@@ -26,13 +26,13 @@ export default function ButtonCard({ primaryAction, secondaryAction, primaryLabe
                     {/* Buttons */}
                     <div className="flex justify-center space-x-2">
                         <button
-                            className="btn btn-sm bg-gray-800 text-white border border-gray-600 hover:bg-gray-700 w-[45%]"
+                            className="btn btn-sm bg-white text-base-300 border border-gray-600 hover:bg-base-content w-[45%]"
                             onClick={primaryAction}
                         >
                             {primaryLabel}
                         </button>
                         <button
-                            className="btn btn-sm bg-gray-700 text-white border border-gray-600 hover:bg-gray-600 w-[45%]"
+                            className="btn btn-sm bg-white text-base-300 border border-gray-600 hover:bg-base-content w-[45%]"
                             onClick={secondaryAction}
                         >
                             {secondaryLabel}

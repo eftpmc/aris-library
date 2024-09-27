@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
       <html lang="en">
       <body
-          className={`${pixelifySans.variable} antialiased relative min-h-screen`}
+          className={`${pixelifySans.variable} antialiased relative min-h-screen overflow-hidden`}
           style={{
             backgroundImage: "url('/background.jpg')", // Replace with your background image path
             backgroundSize: "cover",

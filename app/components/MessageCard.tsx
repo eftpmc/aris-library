@@ -44,7 +44,7 @@ export default function MessageCard({ message, fromUser, onAnimationComplete }: 
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
-                className={`card bg-black border-gray-700 border-[1px] bg-opacity-70 shadow-xl w-full max-w-xs md:max-w-md lg:max-w-lg ${
+                className={`card bg-black border-gray-700 border-[1px] bg-opacity-70 shadow-xl w-full md:max-w-md lg:max-w-lg ${
                     fromUser ? 'bg-primary text-white' : 'text-white'
                 }`}
             >

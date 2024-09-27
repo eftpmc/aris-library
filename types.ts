@@ -12,4 +12,11 @@ export type ButtonMessage = {
     message?: never; // This makes sure 'message' does not exist on a button message
 };
 
-export type Messages = Message | ButtonMessage;
+export type BookMessage = {
+    type: 'book';
+    title: string;
+    createdBy: string;
+    fromUser?: boolean;
+};
+
+export type Messages = Message | ButtonMessage | BookMessage;

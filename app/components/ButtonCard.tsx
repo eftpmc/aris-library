@@ -8,8 +8,6 @@ type ButtonCardProps = {
     secondaryAction: () => void;
     primaryLabel: string;
     secondaryLabel: string;
-    avatar: string;
-    name: string;
     onAnimationComplete?: () => void;
 };
 

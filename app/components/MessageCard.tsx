@@ -4,8 +4,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 type MessageCardProps = {
-    avatar: string;
-    name: string;
     message: string;
     fromUser?: boolean;
     onAnimationComplete?: () => void;

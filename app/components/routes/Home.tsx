@@ -13,7 +13,7 @@ export default function Home() {
     const messages = [
         { message: "Weelcome, my name is Ari and I own this small library.", fromUser: false },
         { message: "Feeel free to either browse what we have or look into adding to our collection.", fromUser: false },
-        { type: 'button', avatar: "https://i.pravatar.cc/150?img=4", primaryLabel: "Create a book", secondaryLabel: "Browse collection", fromUser: true },
+        { type: 'button', primaryLabel: "Create a book", secondaryLabel: "Browse collection", fromUser: true },
     ];
 
     const handleAnimationComplete = () => {

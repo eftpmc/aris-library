@@ -11,7 +11,7 @@ type MessageCardProps = {
     onAnimationComplete?: () => void;
 };
 
-export default function MessageCard({ avatar, name, message, fromUser, onAnimationComplete }: MessageCardProps) {
+export default function MessageCard({ message, fromUser, onAnimationComplete }: MessageCardProps) {
     const [displayText, setDisplayText] = useState('');
     const [isComplete, setIsComplete] = useState(false);
     const indexRef = useRef(0);

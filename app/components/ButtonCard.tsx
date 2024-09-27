@@ -13,7 +13,7 @@ type ButtonCardProps = {
     onAnimationComplete?: () => void;
 };
 
-export default function ButtonCard({ primaryAction, secondaryAction, primaryLabel, secondaryLabel, avatar, name, onAnimationComplete }: ButtonCardProps) {
+export default function ButtonCard({ primaryAction, secondaryAction, primaryLabel, secondaryLabel, onAnimationComplete }: ButtonCardProps) {
     return (
         <div className="flex justify-end mb-2 w-full">
             <motion.div

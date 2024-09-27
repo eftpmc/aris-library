@@ -11,9 +11,9 @@ export default function Home() {
 
     // Updated messages array with a ButtonCard entry
     const messages = [
-        { avatar: "/cat.png", name: "Ari", message: "Weelcome, my name is Ari and I own this small library.", fromUser: false },
-        { avatar: "/cat.png", name: "Ari", message: "Feeel free to either browse what we have or look into adding to our collection.", fromUser: false },
-        { type: 'button', avatar: "https://i.pravatar.cc/150?img=4", name: "User", primaryLabel: "Create a book", secondaryLabel: "Browse collection", fromUser: true },
+        { message: "Weelcome, my name is Ari and I own this small library.", fromUser: false },
+        { message: "Feeel free to either browse what we have or look into adding to our collection.", fromUser: false },
+        { type: 'button', avatar: "https://i.pravatar.cc/150?img=4", primaryLabel: "Create a book", secondaryLabel: "Browse collection", fromUser: true },
     ];
 
     const handleAnimationComplete = () => {

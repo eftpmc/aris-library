@@ -11,8 +11,8 @@ export default function CreateBookComponent() {
 
     // Messages array specific to creating a book
     const messages = [
-        { avatar: "/cat.png", name: "Ari", message: "Grreat! Let's create a new book. What would you like to name it?", fromUser: false },
-        { type: 'button', avatar: "https://i.pravatar.cc/150?img=4", name: "User", primaryLabel: "Start Writing", secondaryLabel: "Go Back", fromUser: true },
+        { message: "Grreat! Let's create a new book. What would you like to name it?", fromUser: false },
+        { type: 'button', avatar: "https://i.pravatar.cc/150?img=4", primaryLabel: "Start Writing", secondaryLabel: "Go Back", fromUser: true },
     ];
 
     const handleAnimationComplete = () => {

@@ -39,8 +39,6 @@ export default function Home() {
                         msg.type === 'button' ? (
                             <ButtonCard
                                 key={index}
-                                avatar={msg.avatar}
-                                name={msg.name}
                                 primaryLabel={msg.primaryLabel}
                                 secondaryLabel={msg.secondaryLabel}
                                 primaryAction={handlePrimaryAction}
@@ -50,8 +48,6 @@ export default function Home() {
                         ) : (
                             <MessageCard
                                 key={index}
-                                avatar={msg.avatar}
-                                name={msg.name}
                                 message={msg.message}
                                 fromUser={msg.fromUser}
                                 onAnimationComplete={index === currentCard ? handleAnimationComplete : undefined}
